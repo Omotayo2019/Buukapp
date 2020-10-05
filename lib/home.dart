@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/login.dart';
+import 'package:flutter_app/register.dart';
 
 void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false, home: HomePage()));
@@ -26,15 +26,15 @@ class HomePage extends StatelessWidget {
             Text(
               'Welcome to BuukApp',
               style: TextStyle(
-                fontSize: 30,
-                fontFamily: 'Dancing',
+                fontSize: 18,
+                fontFamily: 'Lexend',
               ),
             ),
             SizedBox(height: 20),
             RaisedButton(
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => LoginPage()));
+                    MaterialPageRoute(builder: (context) => RegisterPage()));
               },
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(40, 15, 40, 15),
